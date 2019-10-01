@@ -389,7 +389,8 @@ body {
         opacity: 1;
         transition: all 350ms ease;
         transform: translateY(0); }
-    .quizz_question .question_responses .question_response_success {
+    .quizz_question .question_responses .question_response_success,
+    .quizz_question .question_responses .question_response_thanks {
       background-color: #1cdb72; }
     .quizz_question .question_responses .question_response_error {
       background-color: #f01b50;
@@ -422,5 +423,14 @@ body {
     .quizz_question .question_widget .widget_draggable {
       touch-action: none;
       user-select: none; }
+
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem; }
+  .stars .star {
+    flex: 0 0 20px;
+    cursor: pointer;
+    opacity: 0.4; }
 
 /*# sourceMappingURL=main.css.map */

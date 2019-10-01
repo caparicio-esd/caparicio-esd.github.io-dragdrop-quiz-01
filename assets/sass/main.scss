@@ -74,7 +74,8 @@ $colors: (
                 transform: translateY(0);
             }
         }
-        .question_response_success {
+        .question_response_success,
+        .question_response_thanks {
             background-color: map-get($colors, "green");
         }
         .question_response_error {
@@ -112,5 +113,17 @@ $colors: (
             touch-action: none;
             user-select: none;
         }
+    }
+}
+
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: $module * 3;
+
+    .star {
+        flex: 0 0 20px;
+        cursor: pointer;
+        opacity: 0.4;
     }
 }
